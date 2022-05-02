@@ -1,3 +1,5 @@
+package Multidimensional;
+
 import java.util.Scanner;
 
 public class Multidimensional {
@@ -11,14 +13,11 @@ public class Multidimensional {
     public String sDE = "";
     public String string = "";
 
-    Multidimensional(int columnSize , int rowSize ){
+    public Multidimensional(int columnSize, int rowSize){
 
         this.array = new int[columnSize][rowSize];
     }
 
-    Multidimensional(){
-
-    }
     public void enterValues(){
         for(int i = 0 ; i<this.array.length;i++){
             for (int j= 0 ; j<this.array[i].length ;j++){
@@ -31,15 +30,15 @@ public class Multidimensional {
 
     }
 
-    public String getFirstDiogonalElements(){
+    public String findFirstDiogonalElements(){
 
            return "firstDigonalElem: " +fDE;
     }
-    public String getSecondDiogonalElements(){
+    public String findSecondDiogonalElements(){
 
         return  "seconDigonalElements: "+ sDE;
     }
-     public String toMatrixForm(){
+     public String printArrayElementsMatrixFormat(){
          for (int[] arrays: this.array
               ) {
              for (int elem: arrays
@@ -54,7 +53,7 @@ public class Multidimensional {
     @Override
 
     public String toString(){
-        return ("Multidimensional{" + '\n'+
+        return ("Multidimensional.Multidimensional{" + '\n'+
                     "   rowSize: " + rowSize + '\n'+
                     "   columnSize: " +columnSize + '\n'+
                  "}" );

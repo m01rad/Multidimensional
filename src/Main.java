@@ -29,8 +29,8 @@ public class Main {
 
         multidimensional.enterValues();
 
-       System.out.println(multidimensional.getFirstDiogonalElements());
-       System.out.println(multidimensional.getSecondDiogonalElements());
-        System.out.println(multidimensional.toMatrixForm());
+       System.out.println(multidimensional.findFirstDiogonalElements());
+       System.out.println(multidimensional.findSecondDiogonalElements());
+        System.out.println(multidimensional.printArrayElementsMatrixFormat());
     }
 }
